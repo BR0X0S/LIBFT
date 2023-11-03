@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 12:21:33 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/03 16:15:07 by oumondad         ###   ########.fr       */
+/*   Created: 2023/11/03 16:16:48 by oumondad          #+#    #+#             */
+/*   Updated: 2023/11/03 16:25:23 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			i;
-	char			*str;
-	unsigned char	x;
+	char	d;
+	char	s;
+	size_t	i;
 
-	x = (unsigned char)c;
-	while (i < n)
+	d = (char *)dst;
+	s = (char *)src;
+	if (s < d)
 	{
-		if (((unsigned char *)s)[i] == x)
-			return ((unsigned char *)&s[i]);
-		i++;
+		while (len--)
+			d[len] = s[len];
+		return (d);
 	}
-	return (0);
+	else
+		return (ft_memcpy(d, s, len));
 }
