@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:21:45 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/01 18:03:40 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:13:09 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include"libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,11 +6,13 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:40:55 by oumondad          #+#    #+#             */
-/*   Updated: 2023/10/31 16:04:04 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:25:21 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+#include"libft.h"
+
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

@@ -6,9 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:05:45 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/01 18:33:17 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:11:30 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include"libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

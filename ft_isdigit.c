@@ -6,9 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:32:41 by oumondad          #+#    #+#             */
-/*   Updated: 2023/10/31 15:38:42 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:11:54 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include"libft.h"
 
 int	ft_isdigit(int c)
 {
