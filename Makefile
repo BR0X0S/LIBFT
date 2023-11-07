@@ -6,7 +6,7 @@
 #    By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/04 16:19:10 by oumondad          #+#    #+#              #
-#    Updated: 2023/11/06 18:20:49 by oumondad         ###   ########.fr        #
+#    Updated: 2023/11/07 12:10:05 by oumondad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@ SOURCES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 OBJECTS = $(SOURCES:.c=.o)
-TARGET = libft.a
+NAME = libft.a
 
- all : $(TARGET)
- $(TARGET) : $(OBJECTS)
-	ar rcs $(TARGET) $(OBJECTS)
+ all : $(NAME)
+ $(NAME) : $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
 clean :
 	rm -f *.o
 fclean : clean
-	rm -f $(TARGET)
+	rm -f $(NAME)
 re : fclean all
