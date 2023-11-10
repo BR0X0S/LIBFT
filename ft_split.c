@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+/*
 int	ft_count_word(char *str, char c)
 {
 	int	i;
@@ -71,4 +72,70 @@ char	**ft_split(char const *s, char c)
 			i++;
 		if (str[x++] = )
 	}
+}
+*/
+
+int count_word(char *str, char c)
+{
+	int i = 0;
+	int word = 0;
+
+	while (str[i])
+	{
+		while (str[i] == c)
+			i++;
+		if (str[i] != c && str[i])
+			word++;
+		while (str[i] != c && str[i])
+			i++;
+	}
+	return (word);
+}
+
+int count_alpha(char *str, char c)
+{
+	int i = 0;
+
+	while (str[i] != c)
+		i++;
+	return (i);
+}
+
+char place_on_it(char *str, int x)
+{
+	int  i = 0;
+	char *place;
+
+	place = malloc((x + 1) * sizeof(char));
+	while (str[i] && i < x)
+	{
+		place[i] = str[i];
+		i++;
+	}
+	place[i] = '\0';
+	return (place);
+}
+
+char **ft_split(char *str, char c)
+{
+	int x;
+	int y;
+	char **str1;
+
+	if (!str)
+		return (NULL);
+	str1 = malloc((count_word(str, c) + 1) * sizeof(char *));
+	if (!str1)
+		return (NULL);
+	while (str[x])
+	{
+		while (str[x] == c)
+			x++;
+		if (str[x] && str[x] != c)
+			str1[y++] = place_on_it(str[x], count_alpha(str[x], c));
+		while (str[x] != c && str[x])
+			x++;
+	}
+	str1[y] = '\0';
+	return (str1);
 }
