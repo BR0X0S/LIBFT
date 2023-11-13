@@ -6,14 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 12:17:09 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/10 15:43:17 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:40:05 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-
-
 
 int	ft_checkset(char *set, char c)
 {
@@ -28,6 +25,7 @@ int	ft_checkset(char *set, char c)
 	}
 	return (0);
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -35,13 +33,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 
 	if (!s1)
-		return(NULL);
+		return (NULL);
 	str = (char *)s1;
 	start = 0;
 	stop = ft_strlen(str) - 1;
 	while (str[start] && ft_checkset((char *)set, str[start]))
 		start++;
-	while (str[start] && ft_checkset((char *)set, str[stop]))
+	while (stop > 0 && ft_checkset((char *)set, str[stop]))
 		stop--;
 	if (start > stop)
 		return (ft_substr(str, start, 0));

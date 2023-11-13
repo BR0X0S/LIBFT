@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:18:59 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/07 20:20:20 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/11 17:29:29 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*nstr;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	str = (char *)s;
 	place = malloc (len + 1);
-	if (!s)
-		return (0);
 	if (!place)
 		return (NULL);
 	if (len >= ft_strlen(str))
@@ -40,6 +40,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	place[i] = '\0';
 	return (place);
 }
+
 /*
 int main()
 {

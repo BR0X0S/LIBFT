@@ -1,13 +1,13 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 18:09:23 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/10 17:39:22 by oumondad         ###   ########.fr       */
-/*                                                                            */
+/*	*/
+/*	:::	  ::::::::   */
+/*   libft.h	:+:	  :+:	:+:   */
+/*	+:+ +:+	 +:+	 */
+/*   By: oumondad <oumondad@student.42.fr>	  +#+  +:+	   +#+	*/
+/*	+#+#+#+#+#+   +#+	   */
+/*   Created: 2023/11/06 18:09:23 by oumondad	  #+#	#+#	 */
+/*   Updated: 2023/11/11 19:44:02 by oumondad	 ###   ########.fr	   */
+/*	*/
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
@@ -47,9 +47,10 @@ int		ft_toupper(int c);
 
 /* PART 2 */
 
-char    *ft_substr(char const *s, unsigned int start,size_t len);
+char	*ft_substr(char const *s, unsigned int start,size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-char    *ft_strtrim(char const *s1, char const *set);
-char    **ft_split(char const *s, char c);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif

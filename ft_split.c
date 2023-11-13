@@ -6,14 +6,13 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 17:36:14 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/10 20:52:57 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:37:01 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-int	ft_count_word(char *str, char c)
+int	ft_count_word(char const *str, char sep)
 {
 	int	i;
 	int	word;
@@ -22,91 +21,35 @@ int	ft_count_word(char *str, char c)
 	word = 0;
 	while (str[i])
 	{
-		while (str[i] == c)
+		while (str[i] == sep)
 			i++;
-		if (str[i] && str[i] != c)
+		if (str[i] != sep && str[i])
 			word++;
-		while (str[i] && str[i] != c)
+		while (str[i] != sep && str[i])
 			i++;
 	}
 	return (word);
 }
 
-int	ft_count_alpha(char *str, char c)
+int	ft_count_alpha(char const *str, char sep)
 {
 	int	i;
-	int alpha;
 
 	i = 0;
-	while (str[i] && str[i] != c)
-		i++;
-	return (i);
-		
-}
-
-int	ft_place_by_place(char *s, int x)
-{
-	int i = 0;
-	char *place = malloc((x + 1) * sizeof(char));
-	
-	while (s[i] && i < x)
-	{
-		place[i] = s[i];
-		i++;
-	}
-	place[i] = '\0';
-	return (place);
-}
-
-
-char	**ft_split(char const *s, char c)
-{
-	int i, x, y;
-	char **str = malloc(ft_count_word(s, c) * sizeof(char *));
-
-	
-		
-	while (s[i])
-	{
-		while (s[i] == c)
-			i++;
-		if (str[x++] = )
-	}
-}
-*/
-
-int count_word(char *str, char c)
-{
-	int i = 0;
-	int word = 0;
-
-	while (str[i])
-	{
-		while (str[i] == c)
-			i++;
-		if (str[i] != c && str[i])
-			word++;
-		while (str[i] != c && str[i])
-			i++;
-	}
-	return (word);
-}
-
-int count_alpha(char *str, char c)
-{
-	int i = 0;
-
-	while (str[i] != c)
+	while (str[i] != sep)
 		i++;
 	return (i);
 }
 
-char place_on_it(char *str, int x)
+char	*ft_place_on_it(char const *str, int x)
 {
-	int  i = 0;
-	char *place;
+	int		i;
+	char	*place;
 
 	place = malloc((x + 1) * sizeof(char));
+	if (!place)
+		return (NULL);
+	i = 0;
 	while (str[i] && i < x)
 	{
 		place[i] = str[i];
@@ -116,26 +59,44 @@ char place_on_it(char *str, int x)
 	return (place);
 }
 
-char **ft_split(char *str, char c)
+char	**ft_split(char const *s, char c)
 {
-	int x;
-	int y;
-	char **str1;
+	int		x;
+	int		y;
+	char	**str;
 
+	x = 0;
+	y = 0;
+	if (!s)
+		return (NULL);
+	str = malloc((ft_count_word(s, c) + 1) * sizeof(char *));
 	if (!str)
 		return (NULL);
-	str1 = malloc((count_word(str, c) + 1) * sizeof(char *));
-	if (!str1)
-		return (NULL);
-	while (str[x])
+	while (s[x])
 	{
-		while (str[x] == c)
+		while (s[x] == c)
 			x++;
-		if (str[x] && str[x] != c)
-			str1[y++] = place_on_it(str[x], count_alpha(str[x], c));
-		while (str[x] != c && str[x])
+		if (s[x] != c && s[x])
+			str[y++] = ft_place_on_it(s + x, ft_count_alpha(s + x, c));
+		while (s[x] != c && s[x])
 			x++;
 	}
-	str1[y] = '\0';
-	return (str1);
+	str[y] = 0;
+	return (str);
 }
+
+/*
+int main()
+{
+    printf("|*----------------ft_split-----------------*|\n");
+	int i = 0;
+	char	**ssp;
+	ssp = ft_split(",,,,oussama,,,,,mondad,,nemiro,uno",',');
+	while (ssp[i])
+	{
+		printf("%s\n",ssp[i]);
+		i++;
+	}
+	printf("|*-----------------------------------------*|\n");
+}
+*/
