@@ -98,5 +98,12 @@ int main()
 	free(itoa);
 	free(itoa1);
 	free(itoa2);
+
+    write(1, "ft_putnbr_fd: ", 14);
+    ft_putnbr_fd(2147483647, 1);
+    printf("\n");
+     write(1, "ft_putnbr_fd: ", 14);
+    ft_putnbr_fd(-2147483648, 1);
+    printf("\n");
     return 0;
 }
