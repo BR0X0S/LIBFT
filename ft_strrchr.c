@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:21:45 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/07 12:08:16 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/13 17:03:09 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s1[i])
 		i++;
-	i--;
 	while (0 <= i)
 	{
 		if (s1[i] == (char)c)

@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 19:43:15 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/12 20:43:17 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/13 20:19:57 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_nbr_lent(long int nbr)
 	i = 0;
 	if (nbr <= 0)
 	{
-		nbr *= -1;
+		nbr *= (-1);
 		i++;
 	}
 	while (nbr > 0)
@@ -38,9 +38,10 @@ char	*ft_itoa(int n)
 
 	nbr = n;
 	i = ft_nbr_lent(nbr);
-	place = (char *)malloc ((i + 1) * sizeof(char));
+	place = malloc ((i + 1) * sizeof(char));
 	if (!place)
 		return (NULL);
+	place[i] = '\0';
 	if (nbr == 0)
 		place[0] = '0';
 	if (nbr < 0)

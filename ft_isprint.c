@@ -6,15 +6,15 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:12:54 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:31:11 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:33:25 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
-	if (c >= 0 && c < 127)
+	if (c >= 32 && c < 127)
 		return (1);
 	return (0);
 }
