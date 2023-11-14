@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 19:13:22 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/07 12:07:42 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:59:10 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

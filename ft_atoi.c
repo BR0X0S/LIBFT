@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:51:08 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/13 17:18:21 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:57:43 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

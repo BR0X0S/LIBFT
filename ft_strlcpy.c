@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:04:44 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:12:46 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:59:27 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

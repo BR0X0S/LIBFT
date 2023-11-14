@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:39:27 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:12:51 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:59:31 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

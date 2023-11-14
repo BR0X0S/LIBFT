@@ -6,13 +6,13 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 17:36:14 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/12 20:37:01 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:50:49 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_word(char const *str, char sep)
+static int	ft_count_word(char const *str, char sep)
 {
 	int	i;
 	int	word;
@@ -31,7 +31,7 @@ int	ft_count_word(char const *str, char sep)
 	return (word);
 }
 
-int	ft_count_alpha(char const *str, char sep)
+static int	ft_count_alpha(char const *str, char sep)
 {
 	int	i;
 
@@ -41,7 +41,7 @@ int	ft_count_alpha(char const *str, char sep)
 	return (i);
 }
 
-char	*ft_place_on_it(char const *str, int x)
+static char	*ft_place_on_it(char const *str, int x)
 {
 	int		i;
 	char	*place;

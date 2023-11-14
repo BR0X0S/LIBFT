@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:14:57 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:11:46 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 15:01:48 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 18:56:48 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:30:38 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:57:48 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

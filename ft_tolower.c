@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:30:50 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:13:15 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:59:53 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

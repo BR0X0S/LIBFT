@@ -6,11 +6,11 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:40:55 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/06 18:25:21 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:58:00 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
