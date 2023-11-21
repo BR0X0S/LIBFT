@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:32:41 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:58:02 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/21 12:34:24 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_isdigit(int c)
 /*
 int main()
 {
-	int i = '1';
+	int i = 56888;
 	int x = ft_isdigit(i);
 	printf("%d", x);
 }
