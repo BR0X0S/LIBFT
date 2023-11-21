@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/03 16:16:48 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/21 13:07:00 by oumondad         ###   ########.fr       */
+/*   Created: 2023/11/21 18:35:45 by oumondad          #+#    #+#             */
+/*   Updated: 2023/11/21 20:28:39 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	char	*d;
-	char	*s;
-
-	d = (char *)dst;
-	s = (char *)src;
-	if (s < d)
+	if (!lst || !f)
+		return ;
+	while (lst != NULL)
 	{
-		while (len--)
-			d[len] = s[len];
-		return (d);
+		f(lst -> content);
+		lst = lst -> next;
 	}
-	else
-		return (ft_memcpy(d, s, len));
 }

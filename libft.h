@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:09:23 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/21 12:49:57 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/21 18:36:31 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_back(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 
