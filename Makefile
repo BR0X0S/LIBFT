@@ -6,7 +6,7 @@
 #    By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/04 16:19:10 by oumondad          #+#    #+#              #
-#    Updated: 2023/11/21 18:54:23 by oumondad         ###   ########.fr        #
+#    Updated: 2023/11/21 20:33:16 by oumondad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c f
 	ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 	
 BSRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
-	ft_lstclear.c ft_lstiter.c
+	ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJECTS = $(SRCS:.c=.o)
 BOBJECTS = $(BSRCS:.c=.o)
