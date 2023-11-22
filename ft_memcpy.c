@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:42:55 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:58:26 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/22 20:39:36 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	i;
-	char	*d;
-	char	*s;
+	size_t			i;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	s = (char *)src;
-	d = (char *)dst;
+	s = (unsigned char *)src;
+	d = (unsigned char *)dst;
 	i = 0;
 	if (n == 0)
 		return (d);

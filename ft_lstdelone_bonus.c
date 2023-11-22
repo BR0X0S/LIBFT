@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 17:33:32 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/21 20:28:24 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/22 20:24:44 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (del == NULL)
+	if (!lst || !del)
 		return ;
-	if (lst != NULL)
-	{
-		del (lst -> content);
-		free (lst);
-	}
+	del (lst -> content);
+	free (lst);
+
 }
 
 /*

@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:51:08 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 19:13:59 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/22 14:06:57 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	signe = 1;
 	result = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+	while (str[i] && ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13)))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -39,6 +39,6 @@ int	ft_atoi(const char *str)
 /*
 int main()
 {
-	printf("%d",ft_atoi("-56769"));
+	printf("%d",ft_atoi(NULL));
 }
 */

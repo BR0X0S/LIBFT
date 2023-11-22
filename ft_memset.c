@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:29:45 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 19:07:57 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/22 20:44:30 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,15 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
 	unsigned char	x;
-	unsigned char	*array;
+	unsigned char	*str;
 
 	i = 0;
 	x = (unsigned char) c;
-	array = (unsigned char *) b;
+	str = (unsigned char *) b;
 	while (i < len)
 	{
-		array[i] = x;
+		str[i] = x;
 		i++;
 	}
-	return (array);
+	return (str);
 }

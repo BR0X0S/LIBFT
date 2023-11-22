@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 17:55:15 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/21 20:27:49 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/22 20:23:24 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		*lst = (*lst)-> next;
 		free (tmp);
 	}
-	*lst = NULL;
+	temp = NULL;
 }
 /*
 void print_list(t_list *lst)
