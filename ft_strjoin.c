@@ -21,18 +21,18 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	x = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	result = malloc ((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	result = malloc (ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!result)
 		return (NULL);
 	while (s1[x])
 	{
-		result[x] = s1[x];
+		result[x] = ((char *)s1)[x];
 		x++;
 	}
 	y = 0;
 	while (s2[y])
 	{
-		result[x + y] = s2[y];
+		result[x + y] = ((char *)s2)[y];
 		y++;
 	}
 	result[x + y] = '\0';
