@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 19:13:22 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:10 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:55:47 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 char	*ft_strdup(const char *s1)
 {
 	int		i;
-	int		x;
 	char	*copy;
 
-	x = ft_strlen(s1);
 	i = 0;
-	copy = malloc(x + 1);
-	if (copy == 0)
+	copy = malloc(ft_strlen(s1) + 1);
+	if (!copy)
 		return (NULL);
 	while (s1[i])
 	{
