@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 19:43:15 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/22 20:21:01 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:35:47 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (place);
 }
-
-/*
-int main(void)
-{
-	int b = -2147483648;
-	char *s = ft_itoa(b);
-	printf("%s\n", s);
-}
-*/

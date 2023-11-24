@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:14:57 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 15:01:48 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:35:36 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-/*
-int main ()
-{
-	int c = 'a';
-	int x = ft_isalpha (c);
-	printf("%d",x);
-}
-*/

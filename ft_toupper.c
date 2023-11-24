@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:11:24 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:58 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:19:55 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-/*
-int main()
-{
-	int c = 'a';
-	int x = ft_toupper(c);
-	printf("%d", x);
-}
-*/

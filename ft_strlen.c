@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:39:27 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:31 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:37:14 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*
-int main()
-{
-	char str[] = "oussama";
-	int x = ft_strlen(str);
-	printf("%d", x);
-}
-*/

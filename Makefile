@@ -6,7 +6,7 @@
 #    By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/04 16:19:10 by oumondad          #+#    #+#              #
-#    Updated: 2023/11/21 20:33:16 by oumondad         ###   ########.fr        #
+#    Updated: 2023/11/24 16:38:32 by oumondad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,3 +46,5 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 re : fclean all bonus
+
+.PHONY: all, clean, fclean, re

@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:08:41 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/13 17:58:58 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:55:16 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	x;
 	size_t			y;
 
+	if (!s || !f)
+		return (NULL);
 	y = ft_strlen(s);
-	place = malloc ((y + 1) * sizeof(char));
+	place = malloc (y + 1);
 	if (!place)
 		return (NULL);
 	x = 0;

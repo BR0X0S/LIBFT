@@ -6,61 +6,34 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 11:59:22 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:43 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/23 14:44:01 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
+#include <stdio.h>
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*h;
 	char	*n;
-	size_t	i;
 	size_t	j;
 
-	i = 0;
 	h = (char *)haystack;
 	n = (char *)needle;
+	if (!n || !len)
+		return (NULL);
 	if (n[0] == '\0')
 		return (h);
-	while (h[i] && i < len)
+	while (*h && len)
 	{
 		j = 0;
-		while (n[j])
-		{
-			if (h[i + j] == n[j] && j + i < len)
-				j++;
-			else
-				break ;
-		}
-		if (n[j] == '\0')
-			return (&h[i]);
-		i++;
+		while (h[j] == n[j] && j < len && h[j])
+			j++;
+		if (!n[j])
+			return (h);
+		len--;
+		h++;
 	}
 	return (0);
-}
-*/
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
-{
-	size_t	i;
-	size_t	j;
-
-	j = 0;
-	i = 0;
-	if (!*needle)
-		return ((char *)haystack);
-	while (haystack[i])
-	{
-		j = 0;
-		while (haystack[i] == needle[j] && haystack[i] && i < len)
-		{
-			i++;
-			j++;
-		}
-		if (!needle[j])
-			return ((char *)&haystack[i - j]);
-		i = (i - j) + 1;
-	}
-	return (NULL);
 }

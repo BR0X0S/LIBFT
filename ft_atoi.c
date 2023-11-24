@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:51:08 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/22 14:06:57 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:35:22 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * signe);
 }
-/*
-int main()
-{
-	printf("%d",ft_atoi(NULL));
-}
-*/

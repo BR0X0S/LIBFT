@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:53:22 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/22 20:46:18 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:36:32 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	ft_putendl_fd(char *s, int fd)
 	write (fd, s, ft_strlen(s));
 	write (fd, "\n", 1);
 }
-///////

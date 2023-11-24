@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:14:53 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:39 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:37:22 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	char str1[] = "oussama";
-	char str2[] = "oukassa";
-	int x;
-
-	x = ft_strncmp(str1, str2, 3);
-	printf("%d", x);
-}
-*/

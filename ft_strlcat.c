@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:09:30 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:24 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:31:16 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	slen = ft_strlen(src);
 	dlen = ft_strlen(dst);
-	if (dstsize == 0)
+	if (!dst && !dstsize)
 		return (slen);
 	if (dstsize <= dlen)
 		return (slen + dstsize);

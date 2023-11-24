@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:30:50 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:59:53 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:02:56 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-/*
-int main()
-{
-	int c = 'A';
-	int x = ft_tolower(c);
-	printf("%d", x);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:02:36 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/22 20:27:30 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:36:15 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_node -> next = NULL;
 	return (new_node);
 }
-
-/*
-int main()
-{
-	char str[] = "oussama";
-	t_list *node;
-
-	node = ft_lstnew(str);
-	printf("%p\n",node -> next);
-}
-*/

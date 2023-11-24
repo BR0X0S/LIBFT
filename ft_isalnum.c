@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:03:41 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/22 14:39:04 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:35:32 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-/*
-int main()
-{
-	int i = ft_isalnum('v');
-	printf("%d", i);
-}
-*/
