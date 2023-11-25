@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:09:23 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/24 19:08:19 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/25 14:09:06 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,8 @@
 
 /* LIBRARYS */
 
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
-# include <limits.h>
 # include <stdint.h>
 
 typedef struct s_list

@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 17:36:14 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/14 14:50:49 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/25 14:08:14 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,67 +36,66 @@ static int	ft_count_alpha(char const *str, char sep)
 	int	i;
 
 	i = 0;
-	while (str[i] != sep)
+	while (str[i] != sep && str[i])
 		i++;
 	return (i);
 }
 
-static char	*ft_place_on_it(char const *str, int x)
+static void	ft_free_split(char **split, int i)
 {
-	int		i;
+	int		x;
 	char	*place;
 
-	place = malloc((x + 1) * sizeof(char));
-	if (!place)
-		return (NULL);
-	i = 0;
-	while (str[i] && i < x)
+	x = 0;
+	while (x < i)
 	{
-		place[i] = str[i];
-		i++;
+		place = split[x];
+		free (place);
+		x++;
 	}
-	place[i] = '\0';
-	return (place);
+	free(split);
+}
+
+static char	**ft_place_it(char const *str, char sep, char **result, int words)
+{
+	int	x;
+	int	y;
+
+	x = 0;
+	y = 0;
+	while (x < words)
+	{
+		while (str[y] == sep && str[y])
+			y++;
+		result[x] = ft_substr(str, y, ft_count_alpha(&str[y], sep));
+		if (!result[x])
+		{
+			ft_free_split(result, x);
+			return (NULL);
+		}
+		while (str[y] != sep && str[y])
+			y++;
+		x++;
+	}
+	result[x] = NULL;
+	return (result);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int		x;
-	int		y;
-	char	**str;
+	char	**result;
+	int		words;
 
-	x = 0;
-	y = 0;
 	if (!s)
 		return (NULL);
-	str = malloc((ft_count_word(s, c) + 1) * sizeof(char *));
-	if (!str)
+	words = ft_count_word(s, c);
+	result = malloc((words + 1) * sizeof(char *));
+	if (!result)
 		return (NULL);
-	while (s[x])
+	result = ft_place_it (s, c, result, words);
+	if (!result)
 	{
-		while (s[x] == c)
-			x++;
-		if (s[x] != c && s[x])
-			str[y++] = ft_place_on_it(s + x, ft_count_alpha(s + x, c));
-		while (s[x] != c && s[x])
-			x++;
+		return (NULL);
 	}
-	str[y] = 0;
-	return (str);
+	return (result);
 }
-
-/*
-int main()
-{
-    printf("|*----------------ft_split-----------------*|\n");
-	int i = 0;
-	char	**ssp;
-	ssp = ft_split(",,,,oussama,,,,,mondad,,nemiro,uno",',');
-	while (ssp[i])
-	{
-		printf("%s\n",ssp[i]);
-		i++;
-	}
-	printf("|*-----------------------------------------*|\n");
-}
-*/
