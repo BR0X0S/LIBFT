@@ -6,7 +6,7 @@
 #    By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/04 16:19:10 by oumondad          #+#    #+#              #
-#    Updated: 2023/11/24 16:38:32 by oumondad         ###   ########.fr        #
+#    Updated: 2023/11/26 11:29:48 by oumondad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,3 +48,31 @@ fclean : clean
 re : fclean all bonus
 
 .PHONY: all, clean, fclean, re
+
+
+
+
+
+
+
+
+
+
+
+
+SRCS= atoi.c
+
+object = (SRCS:.c=.o)
+
+CC = gcc
+CFLAGS = lkajs
+NAME = libft.a
+
+all : $(NAME)
+
+$(NAME): $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
+claen :
+	rm -f *.o
+fclean : clean
+	rm -f $(NAME)

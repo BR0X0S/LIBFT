@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:09:23 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/25 14:09:06 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/25 17:05:04 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
+# include <stdio.h>
 
 typedef struct s_list
 {
