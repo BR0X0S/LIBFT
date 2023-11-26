@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:42:55 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/26 10:46:22 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/26 20:18:27 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 // 	printf("%d", *(int *)lst2->content);
 // 	//printf("l1 = %p\nl2 = %p", lst.content, lst2->content);
 // }
+/*
 int main()
 {
 	int a[] = {1, 2, 3, 4};
@@ -53,3 +54,4 @@ int main()
 	ft_memcpy(b, a, 4 * 2);
 	printf("%d\n%d", b[0], b[1]);
 }
+*/

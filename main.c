@@ -57,10 +57,12 @@ void print_list(t_list *lst)
 {
 	while (lst)
 	{
-		printf("%s", (char *)lst -> content);
+		printf("%s\n", (char *)lst -> content);
 		lst = lst -> next;
 	}
 }
+
+
 
 int main()
 {
@@ -77,5 +79,21 @@ int main()
 		node = node -> next;
 		i++;
 	}
+	t_list *node2;
+	t_list *head2;
+
+	head2 = NULL;
+	int j = 0;
+	while (j < 5)
+	{
+		node2 = ft_lstnew(strs[j]);
+		ft_lstadd_front(&head2, node2);
+		node2 = node2 -> next;
+		j++;
+	}
+	print_list(head2);
+	printf("\n----------\n");
 	print_list(head);
+
 }
+

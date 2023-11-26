@@ -6,7 +6,7 @@
 /*   By: oumondad <oumondad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:18:59 by oumondad          #+#    #+#             */
-/*   Updated: 2023/11/24 17:23:33 by oumondad         ###   ########.fr       */
+/*   Updated: 2023/11/26 20:05:04 by oumondad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*place;
 	size_t	i;
 
+	if(!s)
+		return (NULL);
 	i = ft_strlen(s);
 	if (start >= i)
 		return ((char *)ft_calloc(1, sizeof(char)));
